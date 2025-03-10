@@ -152,7 +152,7 @@ _logger.LogInformation("Product added to memory: {Product} with recordId: {Recor
 
 The code above demonstrates how to iterate over the products and add them to the memory.
 
-After we create a new product vector, we use it to generate embedding for the product information, convert the embedding result to a float array, and assign it to the product vector.
+After we create a new product vector, we use it to generate an embedding for the product information, convert the embedding result to a float array, and assign it to the product vector.
 
 Look at `_productsCollection`, it is a reference to the container where the products are stored, using a CosmosDB call to get the response for the recordId. For in this case, for logging.
 
@@ -228,17 +228,17 @@ Moreover, as generative AI evolves, we need some telemetry and monitoring to und
 
 ![Image demonstrating the Azure Application Insights in eShopLite](./images/app-insights-eshoplite.png)
 
-As telemetry is essential to understand the user's behavior and improve services, we introduce Azure Application Insights to monitor the application's performance and user interactions.
+As telemetry is essential to understanding the user's behavior and improving services, we introduce Azure Application Insights to monitor the application's performance and user interactions.
 
 Application Insights provides a comprehensive set of telemetry data, helping us to understand how our services are performing, and how users are interacting with the application and cloud usage.
 
-In the image, we can see the Application Insights dashboard, providing how the services are performing, for example, the calls for our Database, number of requests, and the response time.
+In the image, we can see the Application Insights dashboard, providing how the services are performing, for example, the calls for our Database, the number of requests, and the response time.
 
 > 💡 **Pro Tip**: For more information on eShopLite with Semantic Search, look at the repository to learn more: https://aka.ms/netaieshoplitesemanticsearch
 
 ### eShopLite with semantic search using Azure AI Search
 
-In eShopLite end-to-end demo, we use **Azure AI Search** to enhance the search capabilities of the e-commerce application. Azure AI Search helps us create a more robust search engine that can understand the context of the user's queries and provide more accurate results.
+In the eShopLite end-to-end demo, we use **Azure AI Search** to enhance the search capabilities of the e-commerce application. Azure AI Search helps us create a more robust search engine that can understand the context of the user's queries and provide more accurate results.
 
 It also provides a more scalable and reliable search engine that can handle large amounts of data and user queries. Azure AI Search allows the solution to persist the search indexes, so the information will be available even if the application is restarted.
 
